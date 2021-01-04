@@ -14,8 +14,9 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     //set time to load the new page
-    Future.delayed(Duration(seconds: 60), () {
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Menu()));
+    Future.delayed(Duration(seconds: 2), () {
+      Navigator.pushReplacement(
+          context, MaterialPageRoute(builder: (context) => Menu()));
     });
     super.initState();
   }
